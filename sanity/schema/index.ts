@@ -1,0 +1,7 @@
+import hero from './hero'
+import featuredStory from './featuredStory'
+import event from './event'
+import resource from './resource'
+import testimonial from './testimonial'
+
+export const schemaTypes = [hero, featuredStory, event, resource, testimonial]
