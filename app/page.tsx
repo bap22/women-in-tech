@@ -1,4 +1,5 @@
 import { client } from '@/sanity/lib/client'
+import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import SpeakerTopics from '@/components/SpeakerTopics'
@@ -31,6 +32,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
+      <Header />
       <Hero data={data.hero} />
       <About />
       <SpeakerTopics topics={data.topics} />

@@ -20,23 +20,19 @@ export default function Hero({ data }: HeroProps) {
 
   return (
     <section className="relative h-[700px] flex items-center justify-center overflow-hidden">
-      {imageUrl && typeof imageUrl !== 'string' ? (
-        <>
-          <Image
-            src={imageUrl.width(1920).height(1080).url()}
-            alt={data.title || 'Hero'}
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </>
-      ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-900 via-amber-800 to-yellow-900" />
-      )}
+      <>
+        <Image
+          src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1920&h=1080&fit=crop&crop=center"
+          alt={data.title || 'Hero'}
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </>
       
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
           {data.title || 'Women in Construction & Leadership'}
         </h1>
         {data.subtitle && (
