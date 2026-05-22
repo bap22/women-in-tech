@@ -17,13 +17,27 @@ export default {
     },
     {
       name: 'ctaText',
-      title: 'Call to Action Button Text',
+      title: 'Primary CTA Button Text',
       type: 'string',
+      defaultValue: 'Book Kristy to Speak',
     },
     {
       name: 'ctaLink',
-      title: 'Call to Action Link',
+      title: 'Primary CTA Link',
       type: 'string',
+      defaultValue: '#booking',
+    },
+    {
+      name: 'secondaryCtaText',
+      title: 'Secondary CTA Button Text',
+      type: 'string',
+      defaultValue: 'Learn More',
+    },
+    {
+      name: 'secondaryCtaLink',
+      title: 'Secondary CTA Link',
+      type: 'string',
+      defaultValue: '#about',
     },
     {
       name: 'backgroundImage',

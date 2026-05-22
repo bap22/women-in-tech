@@ -1,31 +1,29 @@
 import { client } from '@/sanity/lib/client'
-import { urlFor } from '@/sanity/lib/image'
 import Hero from '@/components/Hero'
-import FeaturedStories from '@/components/FeaturedStories'
+import About from '@/components/About'
+import SpeakerTopics from '@/components/SpeakerTopics'
 import Events from '@/components/Events'
-import Resources from '@/components/Resources'
 import Testimonials from '@/components/Testimonials'
+import Booking from '@/components/Booking'
 
 const HERO_QUERY = `*[_type == "hero"][0]`
-const STORIES_QUERY = `*[_type == "featuredStory"] | order(publishedAt desc)[0...3]`
+const TOPICS_QUERY = `*[_type == "speakerTopic"] | order(_createdAt desc)`
 const EVENTS_QUERY = `*[_type == "event" && date >= now()] | order(date asc)[0...3]`
-const RESOURCES_QUERY = `*[_type == "resource" && featured == true][0...4]`
-const TESTIMONIALS_QUERY = `*[_type == "testimonial"][0...3]`
+const TESTIMONIALS_QUERY = `*[_type == "testimonial"][0...6]`
 
 async function getData() {
   if (!client) {
-    return { hero: null, stories: [], events: [], resources: [], testimonials: [] }
+    return { hero: null, topics: [], events: [], testimonials: [] }
   }
   
-  const [hero, stories, events, resources, testimonials] = await Promise.all([
+  const [hero, topics, events, testimonials] = await Promise.all([
     client.fetch(HERO_QUERY),
-    client.fetch(STORIES_QUERY),
+    client.fetch(TOPICS_QUERY),
     client.fetch(EVENTS_QUERY),
-    client.fetch(RESOURCES_QUERY),
     client.fetch(TESTIMONIALS_QUERY),
   ])
 
-  return { hero, stories, events, resources, testimonials }
+  return { hero, topics, events, testimonials }
 }
 
 export default async function Home() {
@@ -34,35 +32,40 @@ export default async function Home() {
   return (
     <main className="min-h-screen">
       <Hero data={data.hero} />
-      <FeaturedStories stories={data.stories} />
+      <About />
+      <SpeakerTopics topics={data.topics} />
       <Events events={data.events} />
-      <Resources resources={data.resources} />
       <Testimonials testimonials={data.testimonials} />
+      <Booking />
       
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Women in Tech</h3>
+              <h3 className="text-xl font-bold mb-4">Kristy | Women in Construction & Leadership</h3>
               <p className="text-gray-400">
-                Empowering women to thrive in technology careers through community, resources, and opportunities.
+                Empowering women to break barriers and build success in construction and leadership roles.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#stories" className="hover:text-white">Stories</a></li>
+                <li><a href="#about" className="hover:text-white">About</a></li>
+                <li><a href="#topics" className="hover:text-white">Speaking Topics</a></li>
                 <li><a href="#events" className="hover:text-white">Events</a></li>
-                <li><a href="#resources" className="hover:text-white">Resources</a></li>
+                <li><a href="#booking" className="hover:text-white">Book Kristy</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
-              <p className="text-gray-400">Join our community and stay updated!</p>
+              <h4 className="font-semibold mb-4">Contact</h4>
+              <p className="text-gray-400 mb-2">For booking inquiries:</p>
+              <a href="mailto:kristy@example.com" className="text-orange-400 hover:text-orange-300 font-semibold">
+                kristy@example.com
+              </a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Women in Tech. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Kristy. All rights reserved.</p>
           </div>
         </div>
       </footer>

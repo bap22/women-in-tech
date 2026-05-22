@@ -31,5 +31,11 @@ export default {
       title: 'Author Image',
       type: 'image',
     },
+    {
+      name: 'eventContext',
+      title: 'Event Context',
+      type: 'string',
+      description: 'e.g., "National Construction Leadership Conference 2025"',
+    },
   ],
 }

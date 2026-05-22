@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Women in Tech | Empowering Women in Technology",
-  description: "A community dedicated to supporting and celebrating women in technology through stories, events, resources, and mentorship.",
+  title: "Kristy | Women in Construction & Leadership Speaker",
+  description: "Kristy empowers women to break barriers and build success in construction and leadership roles. Book her for your next conference, leadership event, or women's summit.",
 };
 
 export default function RootLayout({

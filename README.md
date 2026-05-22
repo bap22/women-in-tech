@@ -1,49 +1,38 @@
-# Women in Tech Website
+# Kristy | Women in Construction & Leadership
 
-A modern, easy-to-update website for women in tech built with Next.js 15 and Sanity CMS.
+A professional speaker website for Kristy, focused on women in construction and leadership roles. Built with Next.js 15 and Sanity CMS for easy content updates.
 
 ## 🚀 Quick Start
 
 ### 1. Set Up Sanity CMS
 
 1. Go to [sanity.io](https://sanity.io) and create a free account
-2. Create a new project called "Women in Tech"
+2. Create a new project called "Kristy Speaker"
 3. Copy your **Project ID** from the project settings
-4. Install the Sanity CLI and initialize:
+4. Update `.env.local`:
 
 ```bash
-npm install -g @sanity/cli
-cd sanity
-sanity init --env .env.local
-```
-
-### 2. Configure Environment
-
-Create a `.env.local` file:
-
-```bash
-cp .env.local.example .env.local
-```
-
-Edit `.env.local` with your Sanity credentials:
-
-```env
 NEXT_PUBLIC_SANITY_PROJECT_ID=your_actual_project_id
 NEXT_PUBLIC_SANITY_DATASET=production
 ```
 
-### 3. Deploy Sanity Studio
+5. Initialize Sanity:
 
 ```bash
-cd sanity
-sanity deploy
+npm install -g @sanity/cli
+npx sanity init --env .env.local
 ```
 
-This gives you a CMS URL where you can manage all content.
-
-### 4. Run the Website
+6. Deploy Sanity Studio:
 
 ```bash
+npx sanity deploy
+```
+
+### 2. Run the Website
+
+```bash
+npm install
 npm run dev
 ```
 
@@ -55,21 +44,21 @@ Once Sanity is set up, you can update content **without touching code**:
 
 1. Go to your Sanity Studio (e.g., `https://your-project-id.sanity.studio`)
 2. Log in with your Sanity account
-3. Click on any content type:
-   - **Hero Section** - Update main headline and CTA
-   - **Featured Stories** - Add/edit inspiring stories
-   - **Events** - Add upcoming events
-   - **Resources** - Curate helpful resources
-   - **Testimonials** - Add community voices
+3. Manage content types:
+   - **Hero Section** - Main headline, subtitle, CTAs
+   - **Speaking Topics** - Kristy's talk topics with duration and audience
+   - **Events** - Upcoming speaking engagements
+   - **Testimonials** - Client quotes with event context
 4. Click **Publish** to make changes live instantly
 
 ## 🎨 Features
 
-- **Hero Section** - Eye-catching homepage header
-- **Featured Stories** - Blog-style stories with author info
-- **Events Calendar** - Upcoming events with registration links
-- **Resource Library** - Categorized resources (mentorship, jobs, learning, etc.)
-- **Testimonials** - Community voices and quotes
+- **Hero Section** - Powerful headline with dual CTAs (Book + Learn More)
+- **About Section** - Kristy's bio with key stats
+- **Speaking Topics** - Showcase available talks with icons and audience targeting
+- **Events Calendar** - Upcoming speaking engagements
+- **Testimonials** - Client quotes with event context
+- **Booking Form** - Professional inquiry form for event organizers
 - **Responsive Design** - Works beautifully on all devices
 - **Easy CMS** - Update everything via Sanity Studio
 
@@ -85,22 +74,19 @@ Once Sanity is set up, you can update content **without touching code**:
 
 ### Deploy to Vercel
 
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
+1. Push code to GitHub (already done!)
+2. Go to [vercel.com/new](https://vercel.com/new)
+3. Import `bap22/women-in-tech`
 4. Add environment variables:
    - `NEXT_PUBLIC_SANITY_PROJECT_ID`
    - `NEXT_PUBLIC_SANITY_DATASET`
 5. Deploy!
 
-### Environment Variables for Production
+### Update Contact Email
 
-Make sure to add these in Vercel's project settings:
-
-```
-NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-NEXT_PUBLIC_SANITY_DATASET=production
-```
+Edit the booking form and footer in:
+- `components/Booking.tsx` - Change `kristy@example.com`
+- `app/page.tsx` - Update footer email
 
 ## 📁 Project Structure
 
@@ -109,13 +95,14 @@ women-in-tech/
 ├── app/
 │   ├── page.tsx              # Homepage
 │   ├── layout.tsx            # Root layout
-│   └── stories/[slug]/       # Story detail pages
+│   └── stories/[slug]/       # (Optional) Blog posts
 ├── components/
-│   ├── Hero.tsx
-│   ├── FeaturedStories.tsx
-│   ├── Events.tsx
-│   ├── Resources.tsx
-│   └── Testimonials.tsx
+│   ├── Hero.tsx              # Hero section with dual CTAs
+│   ├── About.tsx             # Kristy's bio
+│   ├── SpeakerTopics.tsx     # Speaking topics
+│   ├── Events.tsx            # Upcoming events
+│   ├── Testimonials.tsx      # Client testimonials
+│   └── Booking.tsx           # Booking inquiry form
 ├── sanity/
 │   ├── schema/               # Content type definitions
 │   └── lib/                  # Sanity client utilities
@@ -128,54 +115,66 @@ women-in-tech/
 ### Hero Section
 - Main headline
 - Subtitle
-- CTA button text and link
+- Primary CTA (default: "Book Kristy to Speak")
+- Secondary CTA (default: "Learn More")
 - Background image
 
-### Featured Stories
-- Title, excerpt, full content
-- Author name and image
-- Featured image
-- Publish date
-- Auto-generated slug
+### Speaking Topics
+- Topic title
+- Description
+- Duration (30min, 45min, 1hr, half-day, full-day)
+- Target audience (Construction, Women in Business, Leadership, General)
+- Icon emoji
 
 ### Events
-- Title and description
+- Event title and description
 - Date/time
 - Location (or virtual flag)
 - Registration link
 - Event image
 
-### Resources
-- Title and description
-- URL
-- Category (mentorship, learning, jobs, community, funding)
-- Featured flag
-
 ### Testimonials
 - Quote
 - Author name, role, company
+- Event context (e.g., "National Construction Conference 2025")
 - Author image
 
 ## 💡 Tips
 
-- **Images**: Use the hotspot feature in Sanity to focus on important parts
-- **Scheduling**: Set future publish dates for stories/events
-- **Categories**: Use resource categories to organize content
-- **SEO**: Update metadata in `app/layout.tsx` for your specific needs
+- **Color Scheme**: Orange/amber theme reflects construction and energy
+- **Images**: Use construction sites, speaking events, professional headshots
+- **Speaking Topics**: Add 5-7 core topics that showcase Kristy's expertise
+- **Testimonials**: Prioritize quotes from well-known companies or events
+- **SEO**: Update metadata in `app/layout.tsx` with Kristy's actual location/specialty
 
-## 🤝 Contributing
+## 🎤 Suggested Speaking Topics
 
-Want to add features? Common additions:
-- Newsletter signup
-- Member directory
-- Job board
-- Mentorship matching
-- Discussion forum
+Add these in Sanity Studio to get started:
+
+1. **Breaking Barriers: Women Leading in Construction** 🏗️
+   - Duration: 1 hour
+   - Audience: Construction Professionals
+
+2. **From Hard Hat to Corner Office** 💼
+   - Duration: 45 minutes
+   - Audience: Leadership Teams
+
+3. **Building Confidence on the Job Site** 💪
+   - Duration: 1 hour
+   - Audience: Women in Business
+
+4. **Mentorship Matters: Lifting Others as We Rise** 🤝
+   - Duration: 30 minutes
+   - Audience: General Audience
+
+5. **Safety First, Leadership Always** ⚠️
+   - Duration: Half day workshop
+   - Audience: Construction Professionals
 
 ## 📄 License
 
-MIT - Feel free to use this for your community!
+MIT - Feel free to use this for your speaker website!
 
 ---
 
-Built with ❤️ for women in tech everywhere.
+Built with ❤️ for Kristy | Empowering women in construction and leadership.
