@@ -22,7 +22,7 @@ export default function Hero({ data }: HeroProps) {
     <section className="relative h-[700px] flex items-center justify-center overflow-hidden">
       <>
         <Image
-          src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1920&h=1080&fit=crop&crop=center"
+          src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=1920&h=1080&fit=crop&crop=center"
           alt={data.title || 'Hero'}
           fill
           className="object-cover"
