@@ -71,9 +71,9 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
     },
   ] : topics
   return (
-    <section id="topics" className="py-20 bg-white">
+    <section id="topics" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900" style={{ fontFamily: 'var(--font-playfair)' }}>
           Speaking Topics
         </h2>
         <p className="text-center text-gray-600 mb-12 text-lg">
@@ -84,7 +84,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
           {placeholderTopics.map((topic) => (
             <div
               key={topic._id}
-              className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-xl border border-orange-100 hover:shadow-lg transition-shadow"
+              className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all"
             >
               <div className="text-4xl mb-4">{topic.icon || '🎤'}</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">
@@ -93,12 +93,12 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
               <p className="text-gray-600 mb-4">{topic.description}</p>
               <div className="flex flex-wrap gap-2">
                 {topic.duration && (
-                  <span className="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">
                     ⏱️ {topic.duration}
                   </span>
                 )}
                 {topic.audience && (
-                  <span className="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-accent/20 text-primary text-xs font-semibold px-3 py-1 rounded-full">
                     👥 {audienceLabels[topic.audience] || topic.audience}
                   </span>
                 )}

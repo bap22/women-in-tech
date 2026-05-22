@@ -1,8 +1,8 @@
 export default function Booking() {
   return (
-    <section id="booking" className="py-20 bg-gradient-to-br from-orange-600 via-amber-600 to-yellow-600">
+    <section id="booking" className="py-20 bg-gradient-to-br from-primary via-primary-dark to-accent">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">
+        <h2 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
           Book Kristy for Your Next Event
         </h2>
         <p className="text-xl text-white/90 mb-8">
@@ -11,21 +11,21 @@ export default function Booking() {
         </p>
         
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div className="bg-white/15 backdrop-blur-sm p-6 rounded-xl border border-white/20">
             <div className="text-3xl mb-3">🏗️</div>
             <h3 className="text-lg font-bold text-white mb-2">Construction Events</h3>
             <p className="text-white/80 text-sm">
               Industry conferences, trade shows, safety summits, and company meetings
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div className="bg-white/15 backdrop-blur-sm p-6 rounded-xl border border-white/20">
             <div className="text-3xl mb-3">💼</div>
             <h3 className="text-lg font-bold text-white mb-2">Leadership Conferences</h3>
             <p className="text-white/80 text-sm">
               Executive retreats, leadership development programs, and management training
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div className="bg-white/15 backdrop-blur-sm p-6 rounded-xl border border-white/20">
             <div className="text-3xl mb-3">👩</div>
             <h3 className="text-lg font-bold text-white mb-2">Women's Events</h3>
             <p className="text-white/80 text-sm">
@@ -47,7 +47,7 @@ export default function Booking() {
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="Your name"
                 />
               </div>
@@ -58,7 +58,7 @@ export default function Booking() {
                 <input
                   type="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="your@email.com"
                 />
               </div>
@@ -70,7 +70,7 @@ export default function Booking() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="Your company"
                 />
               </div>
@@ -78,7 +78,7 @@ export default function Booking() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Event Type
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
                   <option>Select event type</option>
                   <option>Construction Conference</option>
                   <option>Leadership Summit</option>

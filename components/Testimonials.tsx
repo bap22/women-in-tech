@@ -16,12 +16,12 @@ interface TestimonialsProps {
 
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-900 via-pink-800 to-blue-900">
+    <section className="py-20 bg-gradient-to-br from-primary to-primary-light">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4 text-white">
+        <h2 className="text-4xl font-bold text-center mb-4 text-white" style={{ fontFamily: 'var(--font-playfair)' }}>
           Community Voices
         </h2>
-        <p className="text-center text-gray-200 mb-12 text-lg">
+        <p className="text-center text-white/90 mb-12 text-lg">
           Hear from women who are shaping the future of technology
         </p>
         
@@ -32,7 +32,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             return (
             <div
               key={testimonial._id}
-              className="bg-white/10 backdrop-blur-sm p-8 rounded-xl"
+              className="bg-white/15 backdrop-blur-sm p-8 rounded-xl border border-white/20"
             >
               <div className="flex items-center gap-4 mb-6">
                 {authorImageUrl && typeof authorImageUrl !== 'string' ? (

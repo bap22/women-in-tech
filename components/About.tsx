@@ -6,11 +6,11 @@ interface AboutProps {
 
 export default function About({ image }: AboutProps) {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-400 to-amber-500">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary to-primary-light">
               {image ? (
                 <Image
                   src={image}
@@ -25,13 +25,13 @@ export default function About({ image }: AboutProps) {
               )}
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-3xl font-bold text-orange-600">15+</div>
+              <div className="text-3xl font-bold text-primary">15+</div>
               <div className="text-gray-600 text-sm">Years in Construction</div>
             </div>
           </div>
           
           <div>
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900" style={{ fontFamily: 'var(--font-playfair)' }}>
               Meet Kristy
             </h2>
             <div className="space-y-4 text-gray-700 text-lg">
@@ -56,15 +56,15 @@ export default function About({ image }: AboutProps) {
             
             <div className="grid grid-cols-3 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">100+</div>
+                <div className="text-3xl font-bold text-primary">100+</div>
                 <div className="text-gray-600 text-sm">Events Spoken</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">10K+</div>
+                <div className="text-3xl font-bold text-primary">10K+</div>
                 <div className="text-gray-600 text-sm">Lives Impacted</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">5★</div>
+                <div className="text-3xl font-bold text-primary">5★</div>
                 <div className="text-gray-600 text-sm">Speaker Rating</div>
               </div>
             </div>

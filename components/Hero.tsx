@@ -28,7 +28,7 @@ export default function Hero({ data }: HeroProps) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary-light/60" />
       </>
       
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -36,7 +36,7 @@ export default function Hero({ data }: HeroProps) {
           {data.title || 'Women in Construction & Leadership'}
         </h1>
         {data.subtitle && (
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+          <p className="text-xl md:text-2xl mb-8 text-white/95">
             {data.subtitle}
           </p>
         )}
@@ -44,7 +44,7 @@ export default function Hero({ data }: HeroProps) {
           {data.ctaText && data.ctaLink && (
             <a
               href={data.ctaLink}
-              className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all transform hover:scale-105"
+              className="inline-block bg-accent hover:bg-accent-light text-primary font-semibold px-8 py-4 rounded-full text-lg transition-all transform hover:scale-105"
             >
               {data.ctaText}
             </a>
@@ -52,7 +52,7 @@ export default function Hero({ data }: HeroProps) {
           {data.secondaryCtaText && data.secondaryCtaLink && (
             <a
               href={data.secondaryCtaLink}
-              className="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold px-8 py-4 rounded-full text-lg transition-all border border-white/30"
+              className="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold px-8 py-4 rounded-full text-lg transition-all border border-white/40"
             >
               {data.secondaryCtaText}
             </a>
