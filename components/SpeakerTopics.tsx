@@ -19,6 +19,57 @@ const audienceLabels: Record<string, string> = {
 }
 
 export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
+  // Placeholder topics if none from Sanity
+  const placeholderTopics: SpeakerTopic[] = topics.length === 0 ? [
+    {
+      _id: '1',
+      title: 'Breaking Barriers in Construction',
+      description: 'Learn how to overcome gender biases and build a successful career in the male-dominated construction industry.',
+      duration: '45 min',
+      audience: 'construction',
+      icon: '🏗️',
+    },
+    {
+      _id: '2',
+      title: 'Leadership Lessons from the Job Site',
+      description: 'Practical leadership strategies that translate from construction sites to boardrooms and beyond.',
+      duration: '60 min',
+      audience: 'leadership',
+      icon: '👷',
+    },
+    {
+      _id: '3',
+      title: 'Building Your Network',
+      description: 'How to create meaningful professional connections that accelerate your career growth.',
+      duration: '45 min',
+      audience: 'women-business',
+      icon: '🤝',
+    },
+    {
+      _id: '4',
+      title: 'Confidence & Communication',
+      description: 'Master the art of speaking up, negotiating, and commanding respect in any room.',
+      duration: '60 min',
+      audience: 'general',
+      icon: '💪',
+    },
+    {
+      _id: '5',
+      title: 'From Apprentice to Executive',
+      description: 'A roadmap for climbing the ladder and reaching the C-suite in construction and related industries.',
+      duration: '45 min',
+      audience: 'construction',
+      icon: '📈',
+    },
+    {
+      _id: '6',
+      title: 'Work-Life Balance in High-Stakes Careers',
+      description: 'Strategies for managing demanding careers while maintaining personal well-being and relationships.',
+      duration: '60 min',
+      audience: 'general',
+      icon: '⚖️',
+    },
+  ] : topics
   return (
     <section id="topics" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -30,7 +81,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {topics.map((topic) => (
+          {placeholderTopics.map((topic) => (
             <div
               key={topic._id}
               className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-xl border border-orange-100 hover:shadow-lg transition-shadow"
@@ -55,12 +106,6 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
             </div>
           ))}
         </div>
-        
-        {topics.length === 0 && (
-          <div className="text-center text-gray-500 py-12">
-            <p>Speaking topics coming soon!</p>
-          </div>
-        )}
       </div>
     </section>
   )

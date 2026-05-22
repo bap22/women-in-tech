@@ -17,6 +17,55 @@ interface EventsProps {
 }
 
 export default function Events({ events }: EventsProps) {
+  // Placeholder events if none from Sanity
+  const placeholderEvents: Event[] = events.length === 0 ? [
+    {
+      _id: '1',
+      title: 'Women in Construction Leadership Summit 2026',
+      description: 'A full-day summit featuring keynote speakers, panel discussions, and networking opportunities for women leaders in construction.',
+      date: '2026-06-15T09:00:00Z',
+      location: 'Denver Convention Center, Denver, CO',
+      isVirtual: false,
+      link: 'https://example.com/summit-2026',
+    },
+    {
+      _id: '2',
+      title: 'Breaking Barriers Workshop',
+      description: 'Interactive workshop on overcoming challenges and bias in the workplace. Includes breakout sessions and group activities.',
+      date: '2026-06-28T14:00:00Z',
+      location: 'Online',
+      isVirtual: true,
+      link: 'https://example.com/workshop-june',
+    },
+    {
+      _id: '3',
+      title: 'Networking Night: Construction Professionals',
+      description: 'Casual evening mixer for construction industry professionals. Great opportunity to expand your network and share experiences.',
+      date: '2026-07-10T18:00:00Z',
+      location: 'The Big Picture Brewery, Denver, CO',
+      isVirtual: false,
+      link: 'https://example.com/networking-july',
+    },
+    {
+      _id: '4',
+      title: 'Executive Leadership Masterclass',
+      description: 'Intensive 2-day masterclass on executive presence, strategic thinking, and leading high-performing teams.',
+      date: '2026-07-22T09:00:00Z',
+      location: 'Hyatt Regency, Chicago, IL',
+      isVirtual: false,
+      link: 'https://example.com/masterclass-july',
+    },
+    {
+      _id: '5',
+      title: 'Virtual Fireside Chat: Career Transitions',
+      description: 'Join Kristy for an intimate conversation about navigating career transitions and pivoting into leadership roles.',
+      date: '2026-08-05T17:00:00Z',
+      location: 'Online',
+      isVirtual: true,
+      link: 'https://example.com/fireside-august',
+    },
+  ] : events
+
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
       weekday: 'long',
@@ -39,7 +88,7 @@ export default function Events({ events }: EventsProps) {
         </p>
         
         <div className="space-y-6">
-          {events.map((event) => {
+          {placeholderEvents.map((event) => {
             const imageUrl = event.image ? urlFor(event.image) : null
             
             return (
@@ -98,12 +147,6 @@ export default function Events({ events }: EventsProps) {
             )
           })}
         </div>
-        
-        {events.length === 0 && (
-          <div className="text-center text-gray-500 py-12">
-            <p>No upcoming events at the moment. Check back soon!</p>
-          </div>
-        )}
       </div>
     </section>
   )
