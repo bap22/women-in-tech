@@ -46,7 +46,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
     {
       _id: '4',
       title: 'Confidence & Communication Mastery',
-      description: 'Master the art of speaking up, negotiating effectively, and commanding respect in any room. Kristi reveals the communication techniques that helped her rise through the ranks in a tough industry.',,
+      description: 'Master the art of speaking up, negotiating effectively, and commanding respect in any room. Kristi reveals the communication techniques that helped her rise through the ranks in a tough industry.',
       duration: '60 min',
       audience: 'General Audience',
     },
