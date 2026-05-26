@@ -25,8 +25,9 @@ export default function Hero({ data }: HeroProps) {
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
-  // Free conference speaker video from Pexels
-  const videoUrl = 'https://videos.pexels.com/video-files/3252095/3252095-uhd_2560_1440_30fps.mp4'
+  // Free ambient video - conference/audience setting from Pexels
+  // Using direct video file URL that's CORS-enabled
+  const videoUrl = 'https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4'
 
   const title = data?.title || 'Kristy'
   const subtitle = data?.subtitle || 'Leadership Keynote Speaker Who Builds Trust, Energy, and Results'
