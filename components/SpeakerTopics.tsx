@@ -25,7 +25,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
     {
       _id: '1',
       title: 'Breaking Barriers in Construction',
-      description: 'A powerful keynote that explores how to overcome gender biases, build credibility, and thrive in male-dominated industries. Kristi shares real stories from the field and actionable strategies that audience members can implement immediately.',,
+      description: 'A powerful keynote that explores how to overcome gender biases, build credibility, and thrive in male-dominated industries. Kristi shares real stories from the field and actionable strategies that audience members can implement immediately.',
       duration: '45-60 min',
       audience: 'Construction Professionals',
     },
