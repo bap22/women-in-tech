@@ -29,7 +29,7 @@ export default function Hero({ data }: HeroProps) {
   // Using direct video file URL that's CORS-enabled
   const videoUrl = 'https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4'
 
-  const title = data?.title || 'Kristi Shellenberg'
+  const title = data?.title || 'Kristi S'
   const subtitle = data?.subtitle || 'Leadership Keynote Speaker Who Builds Trust, Energy, and Results'
 
   return (

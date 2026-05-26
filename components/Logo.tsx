@@ -60,7 +60,7 @@ export default function Logo({ showText = true, size = 'md', className = '' }: L
       {showText && (
         <div className="hidden sm:block">
           <div className={`font-serif ${s.name} font-semibold text-foreground tracking-tight leading-tight`}>
-            Kristi Shellenberg
+            Kristi S
           </div>
           <div className={`${s.tagline} text-muted-foreground uppercase tracking-[0.2em] font-medium`}>
             Keynote Speaker
