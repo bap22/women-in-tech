@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Link from 'next/link'
+import Logo from './Logo'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -37,18 +37,7 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform">
-                <span className="text-primary-foreground font-serif font-bold text-xl">K</span>
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-foreground rounded-sm"></div>
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-serif text-xl font-semibold text-foreground tracking-tight">Kristy</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-widest">Keynote Speaker</div>
-            </div>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -64,9 +53,9 @@ export default function Header() {
             ))}
             <a
               href="#contact"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5 rounded-lg text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/25"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/25"
             >
-              Book Kristy
+              Book Kristi
             </a>
           </nav>
 
@@ -123,9 +112,9 @@ export default function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4 }}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold mt-4 text-center"
+                className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold mt-4 text-center"
               >
-                Book Kristy
+                Book Kristi
               </motion.a>
             </nav>
           </motion.div>
