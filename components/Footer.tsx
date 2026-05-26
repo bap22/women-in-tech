@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import Logo from './Logo'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -28,18 +28,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="relative">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-serif font-bold text-xl">K</span>
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-foreground rounded-sm"></div>
-              </div>
-              <div>
-                <div className="font-serif text-xl font-semibold text-foreground">Kristy</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-widest">Keynote Speaker</div>
-              </div>
-            </Link>
+            <div className="mb-6">
+              <Logo size="md" />
+            </div>
             <p className="text-muted-foreground max-w-md mb-6">
               Empowering women to break barriers and build success in construction and leadership roles. Keynote speaker, workshop facilitator, and industry thought leader.
             </p>
@@ -96,7 +87,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            &copy; {currentYear} Kristy. All rights reserved.
+            &copy; {currentYear} Kristi Shellenberg. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
