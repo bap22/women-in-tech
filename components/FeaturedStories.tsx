@@ -25,7 +25,7 @@ export default function FeaturedStories({ stories }: FeaturedStoriesProps) {
           Featured Stories
         </h2>
         <p className="text-center text-gray-600 mb-12 text-lg">
-          Inspiring journeys from women making waves in technology
+          Inspiring journeys from women building their path in construction and leadership
         </p>
         
         <div className="grid md:grid-cols-3 gap-8">

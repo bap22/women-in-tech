@@ -34,7 +34,7 @@ export default function Resources({ resources }: ResourcesProps) {
           Featured Resources
         </h2>
         <p className="text-center text-gray-600 mb-12 text-lg">
-          Curated tools, communities, and opportunities for women in tech
+          Curated tools, communities, and opportunities for women in construction and leadership
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

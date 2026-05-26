@@ -79,10 +79,10 @@ export default function Events({ events }: EventsProps) {
         >
           <span className="text-primary uppercase tracking-widest text-sm font-semibold">Speaking Engagements</span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-6 text-balance">
-            Where Kristy Speaks
+            Where Kristi Speaks
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From intimate workshops to stadium-sized conferences, Kristy delivers transformative experiences tailored to every format.
+            From intimate workshops to stadium-sized conferences, Kristi delivers transformative experiences tailored to every format.
           </p>
         </motion.div>
 

@@ -64,7 +64,7 @@ export default function VideoSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-primary uppercase tracking-widest text-sm font-semibold">See Kristy in Action</span>
+            <span className="text-primary uppercase tracking-widest text-sm font-semibold">See Kristi in Action</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-6 text-balance">
               If you haven&apos;t seen me speak before,<br />
               <span className="text-primary">maybe start here</span>
@@ -84,7 +84,7 @@ export default function VideoSection() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&h=675&fit=crop"
-                alt="Kristy speaking at a conference"
+                alt="Kristi speaking at a conference"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />

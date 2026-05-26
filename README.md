@@ -1,6 +1,6 @@
-# Kristy | Women in Construction & Leadership
+# Kristi S | Women in Construction & Leadership
 
-A professional speaker website for Kristy, focused on women in construction and leadership roles. Built with Next.js 15 and Sanity CMS for easy content updates.
+A professional speaker website for Kristi, focused on women in construction, leadership, community, and empowerment. Built with Next.js 15 and Sanity CMS for easy content updates.
 
 ## 🚀 Quick Start
 

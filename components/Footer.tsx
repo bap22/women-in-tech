@@ -32,7 +32,7 @@ export default function Footer() {
               <Logo size="md" />
             </div>
             <p className="text-muted-foreground max-w-md mb-6">
-              Empowering women to break barriers and build success in construction and leadership roles. Keynote speaker, workshop facilitator, and industry thought leader.
+              Empowering women in construction, leadership, and community to break barriers, build authentic relationships, and lead with confidence. Keynote speaker, workshop facilitator, and industry advocate.
             </p>
             
             {/* Social Links */}

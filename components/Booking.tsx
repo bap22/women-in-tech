@@ -49,7 +49,7 @@ export default function Booking() {
             <span className="text-primary">unforgettable</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Bring joy, the art of connection, and emotional intelligence to equip and future-proof leaders, sales professionals, and organizations.
+            Bring energy, authenticity, and real-world leadership insight to your next construction conference, women&apos;s leadership event, or corporate gathering.
           </p>
         </motion.div>
 
@@ -60,25 +60,25 @@ export default function Booking() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <h3 className="text-2xl font-semibold mb-8">Why Book Kristy?</h3>
+            <h3 className="text-2xl font-semibold mb-8">Why Book Kristi?</h3>
             
             <div className="space-y-6 mb-12">
               {[
                 {
                   title: 'Customized Content',
-                  description: 'Every presentation is tailored to your audience, industry, and event objectives.',
+                  description: 'Every presentation is tailored to your audience—whether it\'s construction professionals, women in leadership, or community organizations.',
                 },
                 {
                   title: 'Proven Track Record',
-                  description: '1700+ presentations across 17 countries with consistently outstanding feedback.',
+                  description: '15+ years in the construction industry with a passion for empowering women and building stronger teams.',
                 },
                 {
                   title: 'Beyond the Keynote',
-                  description: 'Options for MC, panel facilitation, workshops, and ongoing consultation.',
+                  description: 'Options for MC, panel facilitation, workshops, and ongoing consultation on leadership development.',
                 },
                 {
                   title: 'Lasting Impact',
-                  description: 'Actionable strategies that create real change long after the applause fades.',
+                  description: 'Actionable strategies for building relationships, leading with confidence, and creating inclusive workplaces.',
                 },
               ].map((item, index) => (
                 <motion.div
@@ -105,11 +105,11 @@ export default function Booking() {
             <div className="bg-card p-8 rounded-2xl border border-border">
               <h4 className="font-semibold mb-4">Prefer to reach out directly?</h4>
               <div className="space-y-3 text-muted-foreground">
-                <a href="mailto:kristy@example.com" className="flex items-center gap-3 hover:text-primary transition-colors">
+                <a href="mailto:kristi@example.com" className="flex items-center gap-3 hover:text-primary transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  kristy@example.com
+                  kristi@example.com
                 </a>
                 <a href="tel:+1234567890" className="flex items-center gap-3 hover:text-primary transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

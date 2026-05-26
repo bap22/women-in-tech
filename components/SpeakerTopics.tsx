@@ -25,7 +25,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
     {
       _id: '1',
       title: 'Breaking Barriers in Construction',
-      description: 'A powerful keynote that explores how to overcome gender biases, build credibility, and thrive in male-dominated industries. Kristy shares real stories from the field and actionable strategies that audience members can implement immediately.',
+      description: 'A powerful keynote that explores how to overcome gender biases, build credibility, and thrive in male-dominated industries. Kristi shares real stories from the field and actionable strategies that audience members can implement immediately.',,
       duration: '45-60 min',
       audience: 'Construction Professionals',
     },
@@ -46,7 +46,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
     {
       _id: '4',
       title: 'Confidence & Communication Mastery',
-      description: 'Master the art of speaking up, negotiating effectively, and commanding respect in any room. Kristy reveals the communication techniques that helped her rise through the ranks in a tough industry.',
+      description: 'Master the art of speaking up, negotiating effectively, and commanding respect in any room. Kristi reveals the communication techniques that helped her rise through the ranks in a tough industry.',,
       duration: '60 min',
       audience: 'General Audience',
     },
@@ -67,7 +67,7 @@ export default function SpeakerTopics({ topics }: SpeakerTopicsProps) {
             Presentations That Transform
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Every audience is different. Kristy customizes content to resonate with your specific challenges, industry, and goals.
+            Every audience is different. Kristi customizes content to resonate with your specific challenges, industry, and goals.
           </p>
         </motion.div>
 

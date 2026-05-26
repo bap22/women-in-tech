@@ -19,7 +19,7 @@ export default {
       name: 'ctaText',
       title: 'Primary CTA Button Text',
       type: 'string',
-      defaultValue: 'Book Kristy to Speak',
+      defaultValue: 'Book Kristi to Speak',
     },
     {
       name: 'ctaLink',
