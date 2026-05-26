@@ -40,7 +40,7 @@ export default function Hero({ data }: HeroProps) {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover -scale-x-100"
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
