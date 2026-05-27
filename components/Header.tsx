@@ -55,7 +55,7 @@ export default function Header() {
               href="#contact"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/25"
             >
-              Book Kristi
+              Book Kristy
             </a>
           </nav>
 
@@ -114,7 +114,7 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold mt-4 text-center"
               >
-                Book Kristi
+                Book Kristy
               </motion.a>
             </nav>
           </motion.div>

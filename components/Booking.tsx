@@ -60,7 +60,7 @@ export default function Booking() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <h3 className="text-2xl font-semibold mb-8">Why Book Kristi?</h3>
+            <h3 className="text-2xl font-semibold mb-8">Why Book Kristy?</h3>
             
             <div className="space-y-6 mb-12">
               {[
@@ -105,11 +105,11 @@ export default function Booking() {
             <div className="bg-card p-8 rounded-2xl border border-border">
               <h4 className="font-semibold mb-4">Prefer to reach out directly?</h4>
               <div className="space-y-3 text-muted-foreground">
-                <a href="mailto:kristi@example.com" className="flex items-center gap-3 hover:text-primary transition-colors">
+                <a href="mailto:Kristy@example.com" className="flex items-center gap-3 hover:text-primary transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  kristi@example.com
+                  Kristy@example.com
                 </a>
                 <a href="tel:+1234567890" className="flex items-center gap-3 hover:text-primary transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

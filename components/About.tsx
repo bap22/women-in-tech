@@ -37,7 +37,7 @@ export default function About({ image }: AboutProps) {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
                 src={image || 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop'}
-                alt="Kristi - Keynote Speaker"
+                alt="Kristy - Keynote Speaker"
                 fill
                 className="object-cover"
               />
@@ -71,9 +71,9 @@ export default function About({ image }: AboutProps) {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-primary uppercase tracking-widest text-sm font-semibold">About Kristi</span>
+            <span className="text-primary uppercase tracking-widest text-sm font-semibold">About Kristy</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-6 text-balance">
-              Hi there, I&apos;m Kristi
+              Hi there, I&apos;m Kristy
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
@@ -112,7 +112,7 @@ export default function About({ image }: AboutProps) {
               href="#contact"
               className="inline-flex items-center gap-2 mt-10 text-primary hover:text-primary/80 font-semibold transition-colors group"
             >
-              Learn more about working with Kristi
+              Learn more about working with Kristy
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

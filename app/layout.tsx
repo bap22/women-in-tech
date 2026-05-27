@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Kristi S | Keynote Speaker - Women in Construction & Leadership",
-  description: "Kristi S is a keynote speaker who empowers women to break barriers and build success in construction, leadership, and community. Book her for your next conference or corporate event.",
+  title: "Kristy S | Keynote Speaker - Women in Construction & Leadership",
+  description: "Kristy S is a keynote speaker who empowers women to break barriers and build success in construction, leadership, and community. Book her for your next conference or corporate event.",
 };
 
 export default function RootLayout({

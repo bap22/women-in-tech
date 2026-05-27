@@ -26,28 +26,28 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
   const placeholderTestimonials: Testimonial[] = testimonials.length === 0 ? [
     {
       _id: '1',
-      quote: "Kristi doesn't just deliver a keynote and walk off stage. Her words helped people recognize the unconscious biases in their relationships, behaviors, and culture. The impact lasted long after the applause faded.",
+      quote: "Kristy doesn't just deliver a keynote and walk off stage. Her words helped people recognize the unconscious biases in their relationships, behaviors, and culture. The impact lasted long after the applause faded.",
       author: 'Sarah Mitchell',
       role: 'VP of Operations',
       company: 'BuildCorp Industries',
     },
     {
       _id: '2',
-      quote: "With warmth, storytelling, humor, and deep psychological insight, Kristi creates highly immersive experiences that challenge thinking and inspire real change. She's a true professional.",
+      quote: "With warmth, storytelling, humor, and deep psychological insight, Kristy creates highly immersive experiences that challenge thinking and inspire real change. She's a true professional.",
       author: 'Jennifer Chen',
       role: 'Director of HR',
       company: 'Turner Construction',
     },
     {
       _id: '3',
-      quote: "Outstanding presentation! Kristi's ability to connect with our audience of 500+ professionals was remarkable. Her stories resonated and her actionable advice has already made an impact in our organization.",
+      quote: "Outstanding presentation! Kristy's ability to connect with our audience of 500+ professionals was remarkable. Her stories resonated and her actionable advice has already made an impact in our organization.",
       author: 'Michael Rodriguez',
       role: 'Conference Chair',
       company: 'Women in Construction Summit',
     },
     {
       _id: '4',
-      quote: "We've booked dozens of speakers over the years. Kristi stands out for her authenticity, preparation, and genuine care for delivering value. She exceeded our expectations in every way.",
+      quote: "We've booked dozens of speakers over the years. Kristy stands out for her authenticity, preparation, and genuine care for delivering value. She exceeded our expectations in every way.",
       author: 'Lisa Thompson',
       role: 'Events Director',
       company: 'National Association of Women in Construction',
